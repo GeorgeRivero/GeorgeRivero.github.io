@@ -122,6 +122,16 @@ footer {
     margin-top: 12px;
 }
 
+.projects-grid h3 a {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.projects-grid h3 a:hover {
+    color: #0084d1;
+}
+
 
 /*========MEDIA QUERIES======== */
 

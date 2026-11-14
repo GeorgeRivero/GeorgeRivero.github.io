@@ -267,6 +267,12 @@ footer {
     color: #0084d1;
 }
 
+.drawer-close:focus-visible {
+    outline: 2px solid #a74d67;
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+
 .contact-drawer h2,
 .contact-drawer label {
     color: #ffffff;

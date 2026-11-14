@@ -61,6 +61,7 @@ footer {
     padding: 25px;
     background-color: #222;
     color: #fff;
+    border-top: 2px solid #a74d67;
 }
 
 .site-logo img {
@@ -109,6 +110,10 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
+}
+
+.projects-grid li:hover {
+    border: 1px solid #cacaca;
 }
 
 .projects-grid img {

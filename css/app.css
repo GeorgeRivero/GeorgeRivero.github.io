@@ -74,6 +74,11 @@ footer {
     height: auto;
 }
 
+.site-logo:focus-visible {
+    outline: 2px solid #a74d67;
+    outline-offset: 5px;
+}
+
 .hero {
     min-height: 420px;
     padding: 60px 5%;

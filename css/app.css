@@ -119,6 +119,10 @@ footer {
     line-height: 1.5;
 }
 
+#about p+p {
+    margin-top: 16px;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0px, 1fr));

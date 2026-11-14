@@ -40,6 +40,21 @@ nav a:hover {
     color: #a74d67;
 }
 
+nav a::before {
+    content: "{ ";
+    opacity: 0;
+}
+
+nav a::after {
+    content: " }";
+    opacity: 0;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+    opacity: 1;
+}
+
 main {
     max-width: 1200px;
     margin: 0 auto;

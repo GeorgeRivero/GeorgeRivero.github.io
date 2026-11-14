@@ -189,15 +189,6 @@ footer {
     background-position: 20% center;
 }
 
-.hero h1 {
-    font-size: 1.8rem;
-    overflow-wrap: break-word;
-}
-
-.hero p {
-    font-size: 1rem;
-}
-
 #main-nav.open {
     display: block;
     position: absolute;

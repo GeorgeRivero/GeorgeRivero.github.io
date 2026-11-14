@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/app.css">
     <script src="js/app.js" defer></script>
     <title>Jorge Rivero | Portfolio</title>
 </head>
@@ -12,7 +12,13 @@
 <body>
     <header>
         <h1>Jorge Rivero</h1>
-        <nav>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -21,8 +27,7 @@
         </nav>
     </header>
     <section class="hero">
-        <h1>Designer, Developer & Product Builder</h1>
-        <p>Designing experiences. Building digital products.</p>
+
     </section>
     <main>
         <section id="about">

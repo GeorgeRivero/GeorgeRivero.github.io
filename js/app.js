@@ -23,6 +23,7 @@ contactTrigger.addEventListener("click", function (event) {
     event.preventDefault();
     contactDrawer.classList.add("open");
     document.body.classList.add("drawer-open");
+    document.querySelector("#contact-name").focus();
 });
 const drawerClose = document.querySelector(".drawer-close");
 

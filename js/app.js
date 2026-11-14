@@ -23,3 +23,13 @@ contactTrigger.addEventListener("click", function (event) {
     event.preventDefault();
     contactDrawer.classList.add("open");
 });
+const drawerClose = document.querySelector(".drawer-close");
+
+drawerClose.addEventListener("click", function () {
+    contactDrawer.classList.remove("open");
+});
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+        contactDrawer.classList.remove("open");
+    }
+});

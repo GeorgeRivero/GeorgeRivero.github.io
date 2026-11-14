@@ -59,6 +59,12 @@ footer {
     color: #fff;
 }
 
+.site-logo img {
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
 .hero {
     min-height: 420px;
     padding: 60px 5%;

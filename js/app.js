@@ -16,3 +16,10 @@ navLinks.forEach((link) => {
         menuToggle.setAttribute("aria-expanded", "false");
     });
 });
+const contactTrigger = document.querySelector(".contact-trigger");
+const contactDrawer = document.querySelector("#contact-drawer");
+
+contactTrigger.addEventListener("click", function (event) {
+    event.preventDefault();
+    contactDrawer.classList.add("open");
+});

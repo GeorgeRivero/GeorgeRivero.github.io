@@ -164,14 +164,32 @@ footer {
     margin: 5px 0;
 }
 
-.menu-toggle {
-    display: block;
-}
-
 #main-nav.open {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+/* ======== CONTACT DRAWER ======== */
+
+.contact-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #040B17;
+    padding: 30px;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    visibility: hidden;
+}
+
+.contact-drawer.open {
+    transform: translateX(0);
+    visibility: visible;
 }
 
 
@@ -181,39 +199,44 @@ footer {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-}
 
-.hero {
-    padding: 40px 5%;
-    min-height: 260px;
-    background-position: 20% center;
-}
+    .hero {
+        padding: 40px 5%;
+        min-height: 260px;
+        background-position: 20% center;
+    }
 
-#main-nav.open {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 20px;
-    z-index: 10;
-}
+    .menu-toggle {
+        display: block;
+    }
 
-#main-nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 20px;
+    #main-nav.open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 20px;
+        z-index: 10;
+    }
 
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease,
-        transform 0.3s ease,
-        visibility 0.3s ease;
+    #main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 20px;
 
-    z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+
+        z-index: 10;
+    }
+
 }

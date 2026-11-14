@@ -192,6 +192,74 @@ footer {
     visibility: visible;
 }
 
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.drawer-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.drawer-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.drawer-close:hover {
+    color: #0084d1;
+}
+
+.contact-drawer h2,
+.contact-drawer label {
+    color: #ffffff;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #172235;
+    color: #ffffff;
+    border: 1px solid #344054;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-submit {
+    background-color: #0084d1;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+    background-color: #005f99;
+}
 
 /*========MEDIA QUERIES======== */
 

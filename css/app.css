@@ -131,6 +131,11 @@ footer {
     line-height: 1.4;
 }
 
+.projects-grid h3 a:focus-visible {
+    outline: 2px solid #a74d67;
+    outline-offset: 4px;
+}
+
 .projects-grid p {
     font-size: 0.95rem;
     color: #666;

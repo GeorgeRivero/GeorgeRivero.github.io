@@ -185,6 +185,11 @@ footer {
     cursor: pointer;
 }
 
+.menu-toggle:focus-visible {
+    outline: 2px solid #a74d67;
+    outline-offset: 5px;
+}
+
 .menu-toggle span {
     display: block;
     width: 25px;

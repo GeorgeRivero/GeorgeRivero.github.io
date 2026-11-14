@@ -132,6 +132,16 @@ footer {
     color: #0084d1;
 }
 
+#contact a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    color: #0084d1;
+}
+
 
 /*========MEDIA QUERIES======== */
 

@@ -22,14 +22,17 @@ const contactDrawer = document.querySelector("#contact-drawer");
 contactTrigger.addEventListener("click", function (event) {
     event.preventDefault();
     contactDrawer.classList.add("open");
+    document.body.classList.add("drawer-open");
 });
 const drawerClose = document.querySelector(".drawer-close");
 
 drawerClose.addEventListener("click", function () {
     contactDrawer.classList.remove("open");
+    document.body.classList.remove("drawer-open");
 });
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         contactDrawer.classList.remove("open");
+        document.body.classList.remove("drawer-open");
     }
 });

@@ -261,6 +261,10 @@ footer {
     background-color: #005f99;
 }
 
+body.drawer-open {
+    overflow: hidden;
+}
+
 /*========MEDIA QUERIES======== */
 
 @media (max-width: 768px) {

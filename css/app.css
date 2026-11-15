@@ -178,7 +178,7 @@ footer {
 }
 
 .projects-grid h3 a:hover {
-    color: #0084d1;
+    color: #a74d67;
 }
 
 #contact a {
@@ -188,7 +188,22 @@ footer {
 }
 
 #contact a:hover {
-    color: #0084d1;
+    color: #a74d67;
+}
+
+#contact a::before {
+    content: "{ ";
+    opacity: 0;
+}
+
+#contact a::after {
+    content: " }";
+    opacity: 0;
+}
+
+#contact a:hover::before,
+#contact a:hover::after {
+    opacity: 1;
 }
 
 #contact p {
@@ -268,7 +283,7 @@ footer {
 }
 
 .drawer-close:hover {
-    color: #0084d1;
+    color: #a74d67;
 }
 
 .drawer-close:focus-visible {
@@ -306,7 +321,7 @@ footer {
 }
 
 .contact-submit {
-    background-color: #0084d1;
+    background-color: #a74d67;
     color: #ffffff;
     border: none;
     padding: 12px;
@@ -317,7 +332,7 @@ footer {
 }
 
 .contact-submit:hover {
-    background-color: #005f99;
+    background-color: #b94d6c;
 }
 
 body.drawer-open {

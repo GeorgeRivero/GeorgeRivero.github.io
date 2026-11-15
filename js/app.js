@@ -16,14 +16,16 @@ navLinks.forEach((link) => {
         menuToggle.setAttribute("aria-expanded", "false");
     });
 });
-const contactTrigger = document.querySelector(".contact-trigger");
+const contactTrigger = document.querySelectorAll(".contact-trigger");
 const contactDrawer = document.querySelector("#contact-drawer");
 
-contactTrigger.addEventListener("click", function (event) {
-    event.preventDefault();
-    contactDrawer.classList.add("open");
-    document.body.classList.add("drawer-open");
-    document.querySelector("#contact-name").focus();
+contactTrigger.forEach(function (trigger) {
+    trigger.addEventListener("click", function (event) {
+        event.preventDefault();
+        contactDrawer.classList.add("open");
+        document.body.classList.add("drawer-open");
+        document.querySelector("#contact-name").focus();
+    });
 });
 const drawerClose = document.querySelector(".drawer-close");
 
